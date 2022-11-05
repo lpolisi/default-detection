@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predictions</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h2>Test set</h2>
+<table>
+    {% for table in tables %}
+    {{ table|safe }}
+    {% endfor %}
+</table>
+
+</body>
+</html>
